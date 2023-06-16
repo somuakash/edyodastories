@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edyoda Stories</title>
+    <link rel="stylesheet" href="Edyoda Story.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/e60a99d7c3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+</head>
+<style>
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* color: whitesmoke;   */
+    /* font-family: Raleway; */
+}
+
+
+#h2{
+    display:block;
+}
+
+#header {
+    padding: 16px 78px;
+    background-color: #fff;
+    display: flex;
+    border: 3px solid whitesmoke;
+    margin-top: 20px;
+}
+
+#edyoda{
+    width: 108px;
+               height: 100%;
+               margin-top: 5px;
+               font-family: Raleway,sans-serif;
+               font-size: 24px;
+               font-weight: 900;
+               font-style: normal;
+               font-stretch: normal;
+               line-height: 1.08;
+               letter-spacing:.9px;
+               text-align: left;
+               background-image: (100deg);
+               background-image: 180deg;
+               background-image: (269deg,#0048ff,#0096ff),linear-gradient(#000,#000);
+               color: #0084ff;
+               -webkit-background-clip: text;
+               background-clip: text;
+}
+
+
+#logo{
+    margin: 0;
+    font-weight: 500;
+    font-style: italic;
+    font: Raleway;
+    width: 180px;
+    
+}
+
+#ec{
+    padding: 15px 0px;
+    margin-left: 30px;
+}
+
+#ecl{
+    color: #000;
+}
+
+#courses{
+     padding: 0px 8px;
+     border-style: none;
+     width: 20px;
+     
+}
+
+#section{
+    width: 100%;
+    margin: 0;
+    padding-left: 15%;
+    height: auto;
+}
+
+.tp{
+   padding-left: 8%; 
+}
+
+
+#h1{
+ 
+    /* background-color: greenyellow; */
+    height: auto;
+    color: #000;
+    font-weight: 600;
+    margin: 0%;
+    margin-bottom: 20px;
+}
+
+#s1
+{
+    /* margin-left: 8%;
+    margin-right: 8%; */
+    padding-top: 20px;
+    /* background-color: aquamarine; */
+}
+
+#p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+#filter{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+#ul{
+    list-style: none;
+    display: inline;
+}
+
+li{
+    padding: 6px 14px;
+    width: auto;
+    color: #0084ff;
+    border-radius: 15px;
+    border: 1px solid #0084ff;
+    margin:5px;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+li:active{
+    color:#fff;
+    background-color: #0084FF;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: repeat(3,33.3%);
+    width: 100%;
+    padding-left: 9%;
+    padding-right: 21%;
+    height: auto;
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    padding-top: 20px;
+    
+}
+
+.grid{
+    margin-bottom: 10px;
+    height: 400px;
+    width: auto;
+    border: 3px solid whitesmoke;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  
+}
+
+
+.grid{
+    height: 380px;
+    width: 260px;
+}
+
+.ml{
+    width: 100%;
+    height: 176px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  
+}
+
+.ts{
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+
+.tsc{
+    padding: 10px 24px;
+}
+
+.au{
+    padding-top: 4px;
+    color: #0096ff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    padding-left: 25px;
+}
+
+.date{
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.ac{
+    height: 105px;
+    width: 260px;
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    color: rgba(0,0,0,.6);
+    margin: 4px 0;
+    padding: 10px 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.content{
+       text-overflow: ellipsis;
+       overflow: hidden;
+
+}
+
+#footer{
+    height: auto;
+    width:auto;
+    background-color: #172146;
+    padding: 80px 16%;
+    margin-top: 80px;
+}
+</style>
+ <body>
+    
+    <div>
+        <header class="header" id="header">
+            <div id="h2">
+                <div id="edyoda" class="edyoda">
+                    <h3> EDYODA </h3>
+                </div>
+                <div id="logo" class="logo">Stories</div>
+            </div>
+            <div id="ec" class="ec">
+                <label for="courses" id="ecl">Explore Categories</label>
+                <select name="courses" id="courses">
+                    <option value=""></option>
+                    <option value="ARTIFICIAL INTELIGANCE">ARTIFICIAL INTELIGANCE</option>
+                    <option value="DATA SCIENTIST">DATA SCIENTIST</option>
+                    <option value="FULLSTACK DEVELOPER">FULLSTACK DEVELOPER</option>
+                    <option value="MACHINE LEARNING">MACHINE LEARNING</option>
+                    <option value="CYBER SECURITY">CYBER SECURITY</option>
+                    <option value="SAP PROGRAMING">SAP PROGRAMING</option>
+
+                </select>
+            </div>
+
+        </header>
+    </div>
+
+    <section id="section" class="section">
+        <div id="s1" class="s1">
+            <div class="tp">
+                <h1>Trending Posts</h1>
+            </div>
+            <div id="filter" class="tp">
+                <i class="fa-sharp fa-solid fa-filter fa-flip-horizontal"></i>
+                <span><p id="p">Filter by Catergory</p></span>
+            </div>
+
+            <div class="tp">
+                <ul id="ul">
+                    <li>All</li>
+                    <li>Artificial Inteligance</li>
+                    <li>Cloud Computing</li>
+                    <li>Devops</li>
+                    <li>Programing Languages</li>
+                    <li>Mobile Application Developer</li>
+                    <li>Technology And Tools</li>
+                    <li>Get a Job in a Tech Company</li>
+                    <li>Others</li>
+
+                 </ul>
+            </div>
+
+            <div id="container" class="container">
+                <div class="grid" id="grid1">
+                    <div class="img">
+                        <a href="">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/learn_machine_learning_courses_online.png" alt="ML" id="ml" class="ml">
+                        </a>
+                    </div>
+
+                    <div class="tsc">
+                        <p class="ts">Introduction To a Machine Learning Online Course</p>
+                    </div>
+
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 23 Aug 2019</span></p>
+                    </div>
+
+                    <div class="content">
+                         <p class="ac">We have had an insight into Artificial
+                            intelligence well.one of its subfeilds is machine 
+                            learning and this introduction will help you get a... 
+                            <!-- fair idea of what this machine learning..... -->
+                         </p>
+                    </div>
+
+                </div>
+
+                <div class="grid" id="grid2">
+                    <div class="img">
+                        <a href="">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/6.png" alt="ML" id="ml" class="ml">
+                        </a>
+                    </div>
+                    <div class="tsc">
+                        <p class="ts">Challanges of Machine Learning...</p>
+                    </div>
+
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 24 Aug 2019</span></p>
+                    </div>
+
+                    <div class="content">
+                         <p class="ac">Machine Learning is a susbset of Artificial intelligence
+                            which is an important part of compueter science the revolution of Big 
+                            Data promises to transform the way we work live...
+                         </p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid" id="grid3"> 
+                    <div class="img">
+                        <a href="">
+                       <img src="https://edyoda.s3.amazonaws.com/media/blog-images/automation-testing-an-overview-2.png" alt="ML" id="ml" class="ml">
+                        </a>
+                    </div>
+                     <div class="tsc">
+                         <p class="ts">What is Web Scraping?</p>
+                     </div>
+ 
+                     <div>
+                         <p class="au">Zac Clancy <span class="date"> | 23 Sep 2019</span></p>
+                     </div>
+ 
+                     <div class="content">
+                          <p class="ac">Simply put Web Scraping is one of the tools Developers
+                            use to gather and analyse information from the internet some websites
+                            and platforms offer application programming... interfaces...  
+                          </p>
+                     </div>
+ 
+               </div>
+
+
+                <div class="grid" id="grid4">
+                    <div class="img">
+                        <a href="">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/3.png" alt="ML" id="ml" class="ml">
+                        </a>
+                    </div>
+                    <div class="tsc">
+                        <p class="ts">LAMP Stack Vs MEAN stack.....</p>
+                    </div>
+
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 24 Aug 2019</span></p>
+                    </div>
+
+                    <div class="content">
+                         <p class="ac">In today's dynamic world developing a rapid application with a 
+                            smooth user interfaces that can adapt to soecific features is the main business
+                            requirment Many organisations....  
+                         </p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid" id="grid5">
+                    <div class="img">
+                        <a href="">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/5.png" alt="ML" id="ml" class="ml">
+                        </a>
+                    </div>
+                    <div class="tsc">
+                        <p class="ts">Breaking the Myths around Cybersecurity</p>
+                    </div>
+
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 26 Aug 2019</span></p>
+                    </div>
+
+                    <div class="content">
+                         <p class="ac">Cybersecurity plays an intergral role in the process of good
+                            business models but even cybersecurity programs built with good intentions
+                            can fall short in front of advanced... cyber attacking...
+                         </p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid" id="grid6">
+                    <div class="img">
+                        <a href="">
+                            <img src="https://edyoda.s3.amazonaws.com/media/blog-images/7.png" alt="ML" id="ml" class="ml">
+                        </a>
+                        </div>
+                    <div class="tsc">
+                        <p class="ts">What is Income Share Agreement ?</p>
+                    </div>
+
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 14 Oct 2019</span></p>
+                    </div>
+
+                    <div class="content">
+                         <p class="ac">The term Income Agreement has been around for a long time science
+                            1955 to be precise Surprised,eh? it was firdt introduced by Milton Friedman,
+                            an American economist...
+                         </p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid" id="grid7">
+                    <div class="img">
+                        <a href="">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/7.png" alt="ML" id="ml" class="ml">
+                        </a>
+                    </div>
+                    <div class="tsc">
+                        <p class="ts">Impact of Cloud Computing in various industries</p>
+                    </div>
+
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 24 Aug 2019</span></p>
+                    </div>
+
+                    <div class="content">
+                         <p class="ac">Cloud computing can be rapidly gaining pace in the world of
+                            information technology it has been observed that over 90% of global...
+                            
+                         </p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid" id="grid8">
+                    <div class="img">
+                       <a href="">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/automation-testing-an-overview-2.png" alt="ML" id="ml" class="ml">
+                   
+                    </a> </div>
+                    <div class="tsc">
+                        <p class="ts">Importance of Data Backup</p>
+                    </div>
+
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 26 Aug 2019</span></p>
+                    </div>
+
+                    <div class="content">
+                         <p class="ac">A business must always introspect the areas where they lack in order
+                            to brin about a positive change in the work environment One of the main
+                            precautions or a contingency plan.. th...
+                         </p>
+                    </div>
+
+                </div>
+
+                
+                <div class="grid" id="grid9">
+                     <div class="img">
+                        <a href="">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/practical_machine_learning_1.png" alt="ML" id="ml" class="ml"></a>
+                    </div>
+                    <div class="tsc">
+                        <p class="ts">Practical Machine Learning with Python and Keras</p>
+                    </div>
+    
+                    <div>
+                        <p class="au">EDYODA <span class="date"> | 16 Oct 2019</span></p>
+                    </div>
+    
+                    <div class="content">
+                         <p class="ac">Machine learning is a feild of artifical intelligence that uses statistical
+                            techniques to give computer systems the ability to... 
+                            
+                    </div>
+    
+                </div>
+                
+            </div>
+            
+
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer" class="footer"></div>
+    </footer>
+
+ </body>
+
+</html>
